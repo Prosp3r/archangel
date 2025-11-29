@@ -9,8 +9,8 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/Prosp3r/archangel/internal/database"
-	"github.com/Prosp3r/archangel/internal/models"
+	"archangel/internal/database"
+	"archangel/internal/models"
 
 	"github.com/redis/go-redis/v9"
 	"gopkg.in/yaml.v3"
