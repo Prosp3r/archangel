@@ -1,0 +1,33 @@
+database:
+  url: "postgres://archangel:archangel@localhost:5432/archangel?sslmode=disable"
+
+valkey:
+  addr: "localhost:6379"
+  password: ""
+  db: 0
+  signal_key: "oracle:signals:latest"
+
+server:
+  port: 8080
+  sse_buffer: 100
+
+exchanges:
+  bybit:
+    api_key: "YOUR_BYBIT_KEY"
+    api_secret: "YOUR_BYBIT_SECRET"
+    testnet: false
+  binance:
+    api_key: "YOUR_BINANCE_KEY"
+    api_secret: "YOUR_BINANCE_SECRET"
+  okx:
+    api_key: "YOUR_OKX_KEY"
+    api_secret: "YOUR_OKX_SECRET"
+    passphrase: "YOUR_OKX_PASSPHRASE"
+  mexc:
+    api_key: "YOUR_MEXC_KEY"
+    api_secret: "YOUR_MEXC_SECRET"
+
+backtester:
+  slippage_percent: 0.08
+  funding_rate_per_8h: 0.0001
+  report_dir: "./reports"
